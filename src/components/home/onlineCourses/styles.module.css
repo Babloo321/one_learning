@@ -1,0 +1,83 @@
+.upcomingTraining{
+  width: 100%;
+  max-width: 80%;
+  margin: 50px auto 0 auto;
+}
+.upcomingTraining h2{
+  font-size: 2rem;
+  font-family: 'Roboto','Oswal', 'Lato', sans-serif;
+  color: var(--body_color);
+  margin-bottom: 3rem;
+}
+.upcomingTraining .btn{
+  background-color: var(--body_red);
+  color: var(--body_color);
+  font-size: 1rem;
+  font-family:  'Roboto', 'Roboto', sans-serif;
+  padding:0.5rem;
+  border-radius: 2rem;
+  cursor: pointer;
+  transform: translate(440px,5px);
+}
+.upcomingTraining .btn:hover{
+  background-color: var(--body_color);
+  color: var(--body_background);
+  padding: 6px;
+  box-shadow: 2px 2px 2px 2px #ffffff;
+}
+.grid_container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 1rem;
+  width: 100%;
+  height: auto; /* Set the height as needed */
+}
+
+.grid_container .grid_item {
+  background:linear-gradient(-45deg, #141414, #fff);
+  border: 1px solid #ccc;
+  color: var(--body_color);
+  border-radius: 2rem;
+  padding: 1rem;
+}
+.grid_container .grid_item h4{
+  font-size: 1rem;
+  font-family: 'Roboto', 'Oswal', 'Lato', sans-serif;
+  padding: 0.5rem;
+  color: var(--body_background);
+}
+
+.grid_container .grid_item h3{
+  font-size: 1.2rem;
+  font-family: 'Roboto', 'Oswal', 'Lato', sans-serif;
+  padding: 0.5rem;
+  font-weight: 500;
+  /* text-shadow: 2px 3px 2px #141414; */
+  cursor: pointer;
+}
+.grid_container .grid_item p{
+  font-size: 1rem;
+  font-family: 'Roboto', 'Oswal', 'Lato', sans-serif;
+  padding: 0.5rem;
+
+}
+.grid_container .grid_item .registerBtn{
+  font-size: 1rem;
+  font-family: 'Lato', sans-serif;
+  padding: 0.5rem;
+  border-radius: 2rem;
+  cursor: pointer;
+  background-color: var(--body_background);
+  color: var(--body_color);
+}
+.grid_container .grid_item .registerBtn:hover{
+  background-color: var(--body_color);
+  color: var(--body_background);
+  padding: 0.5rem;
+  box-shadow: 2px 2px 2px 2px #ffffff;
+  cursor: pointer;
+}
+.hr{
+  width: 890px;
+  text-align: center;
+}

@@ -1,0 +1,81 @@
+.container{
+  width: 100%;
+  max-width: 80%;
+  margin: 4rem auto;
+}
+.form {
+  max-width: 80%;
+  display: flex;
+  flex-direction: column;
+  margin: 4rem auto;
+  padding: 10rem;
+  border: 11px solid var(--body_red);
+  border-radius: 4em;
+  background-color: var(--body_color);
+}
+.hAndPCont{
+  color: var(--body_background);
+  margin-top: -6rem;
+  color: var(--body_red);
+}
+.hAndPCont p{
+color: var(--body_background);
+font-size: 1.2rem;
+padding: 1rem;
+font-weight: 500;
+}
+.label {
+  text-align: left;
+  margin-top: 15px;
+  margin-left: 2px;
+  font-weight: 400;
+  color: var(--body_background);
+  position: relative;
+}
+.label::after{
+  content: "*";
+  color: var(--body_red);
+  font-size: 1rem;
+  position: absolute;
+  /* top: 4px; */
+  padding:4px;
+}
+
+.input,
+.select,
+.fileInput,
+.textarea {
+  padding: 8px;
+  font-size: 1rem;
+  /* border: 1px solid #ccc; */
+  border-radius: 4px;
+  /* margin-top: 5px; */
+}
+
+.input,
+.select,
+.fileInput {
+  width: 100%;
+}
+
+.textarea {
+  width: 100%;
+  height: 80px;
+  resize: vertical;
+}
+
+.button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  font-size: 1rem;
+  color: #fff;
+  background-color: #007bff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.button:hover {
+  background-color: #0056b3;
+}

@@ -1,0 +1,125 @@
+/* src/components/About.module.css */
+.aboutSection{
+  width: 100%;
+}
+.heroSection{
+  width: 100%;
+  background: linear-gradient(45deg, #141414,#da1b36);
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+}
+.heroChild .heading{
+  font-size: 2rem;
+  font-family: 'Roboto','Oswal','Lato',sans-serif;
+  text-align: center;
+  word-spacing: 6px;
+  letter-spacing: 2px;
+  line-height: 122px;
+}
+.heroChild .para{
+  font-size: 1rem;
+  font-family: 'Oswal','Roboto',sans-serif;
+  word-spacing: 3px;
+  letter-spacing: 1.3px;
+  padding: 3em;
+  font-weight: bold;
+  background: var(--body_background);
+  background-size: 400% 400%;
+  -webkit-background-clip: text;
+  color: var(--body_color);
+  animation: gradientAnimation 15s ease infinite;
+}
+@keyframes gradientAnimation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+.heroSection .heroChild .image{
+  background-color: var(--body_background);
+}
+.heroChild .video .videoItSelf {
+width: 250px;
+height: 100px;
+}
+.heroChild .image .imageItself{
+  width: 250px;
+  height: 100px;
+}
+
+
+/* about class section */
+.aboutSection .about {
+  width: 100%;
+  max-width: 80%;
+  margin: 2rem auto;
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+}
+.aboutImg{
+  margin-bottom: 1rem;
+  height: 120px;
+  width: 101px;
+}
+.about .aboutChild{
+  flex: 1;
+}
+.about .aboutChild .aboutGrandChild{
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.aboutGrandChild .aboutPara h1{
+  font-size: 2rem;
+  padding: 1rem;
+  background-color: #da1b36;
+  color: #ffffff;
+  text-align: center;
+  font-family: 'Roboto','Oswal','Lato',sans-serif;
+}
+.about .aboutChild .aboutGrandChild .aboutImageCont{
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  flex-wrap: nowrap;
+}
+.aboutGrandChild .article p{
+  font-size: 1rem;
+  letter-spacing: 1px;
+  line-height: 22px;
+  word-spacing: 3px;
+  text-align: justify;
+}
+
+.director{
+  overflow-y: auto;
+  margin-top: -4rem;
+  padding: 1em;
+}
+.director p{
+  text-align: center;
+  padding: .3em;
+}
+.facCont{
+  margin: 6rem auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+.facCont .facality{
+  border-radius: 1rem;
+  padding: 1rem;
+  background-color: var(--body_background);
+  color: var(--body_color);
+}

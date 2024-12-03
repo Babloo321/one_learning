@@ -1,0 +1,150 @@
+.maincontainer {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  gap: 2px;
+  background-color:var(--body_background);
+  color: var(--body_color);
+}
+
+
+
+
+.maincontainer .textcontainer {
+  width: 50%;
+  padding: 12px 32px;
+  border: 1px solid var(--body_color);
+  border-radius: 12px;
+  /* box-shadow: 3px 3px 6px 0px var(--body_color),
+    -3px -3px 6px 0px var(--body_color); */
+}
+.maincontainer .formcontainer {
+  width: 50%;
+  padding: 12px 32px;
+  border: 1px solid var(--body_color);
+  border-radius: 12px;
+  background-image: url("../image/background.jpg");
+  background-size: contain;
+  background-repeat: repeat;
+  background-position:cover;
+}
+
+.formcontainer .formheading {
+  transform: translateY(50%);
+  font-size: 2rem;
+  font-weight: bold;
+  text-align: center;
+  color: #141414;
+}
+.formcontainer .formsubheading {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: var(--body_red);
+  transform: translateY(-30%);
+}
+
+.formcontainer .formbox {
+  width: 80%;
+  max-height: calc(100% - 40px);
+  margin: auto; 
+  background-color: var(--body_background);
+  padding: 20px; 
+  border-radius: 12px;
+  box-shadow: 3px 3px 6px 0px var(--body_color),
+    -3px -3px 6px 0px var(--body_color);
+  overflow-y: auto;
+}
+
+.formbox h1 {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 16px;
+  text-align: center;
+}
+
+.maincontainer .formcontainer input,
+.formcontainer textarea,
+.formcontainer select {
+  width: 100%;
+  padding: 12px; 
+  border: 1px solid var(--body_color);
+  border-radius: 12px;
+  box-shadow: 3px 3px 6px 0px var(--body_color),
+    -3px -3px 6px 0px var(--body_color);
+  margin-top: 12px;
+  background-color: var(--body_background);
+  color: var(--body_color);
+}
+
+.maincontainer .formcontainer .lists {
+  height: 150px;
+  width: 100%;
+  padding: 12px;
+  box-shadow: 3px 3px 6px 0px var(--body_color),
+    -3px -3px 6px 0px var(--body_color);
+  overflow-y: auto;
+  list-style-type: none;
+  text-align: left;
+}
+
+.maincontainer .formcontainer .lists li {
+  padding: 6px 12px;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.maincontainer .formcontainer .lists li:hover {
+  background-color: var(--body_color);
+  color: var(--body_background);
+}
+
+.formcontainer .form .label {
+  color: var(--body_color);
+  font-size: 1.2rem;
+  font-weight: 600;
+  text-align: left;
+  padding: 6px 8px;
+}
+
+.maincontainer button {
+  width: 100%;
+  padding: 12px 22px;
+  border: 1px solid var(--body_color);
+  border-radius: 12px;
+  box-shadow: 3px 3px 6px 0px var(--body_color),
+    -3px -3px 6px 0px var(--body_color);
+  margin-top: 12px;
+  cursor: pointer;
+  color: var(--body_background);
+  background-color: var(--body_red);
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.maincontainer button:hover {
+  background-color: var(--body_background);
+  color: var(--body_color);
+}
+
+.maincontainer .textcontainer{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  text-align: left;
+  gap: 12px;
+}
+
+@media (max-width: 768px) {
+  .maincontainer {
+    flex-direction: column;
+  }
+
+  .maincontainer .formcontainer,
+  .maincontainer .textcontainer {
+    width: 100%;
+  }
+
+  .formcontainer .formbox {
+    width: 90%;
+    max-height: unset; 
+  }
+}

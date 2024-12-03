@@ -1,0 +1,30 @@
+/* Footer.module.css */
+.mainFooter {
+  /* background-color: #141414; */
+  padding: 20px;
+  text-align: center;
+}
+
+.mainFooter ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.mainFooter li {
+  color: #ffffff;
+  margin: 10px auto;
+}
+
+.mainFooter .link {
+  text-decoration: none;
+}
+
+.mainFooter .link:hover {
+  text-decoration: underline;
+  font-weight: 500;
+  font-size: 1.3rem;
+}

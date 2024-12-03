@@ -1,0 +1,106 @@
+/* container */
+.container{
+  width: 80%;
+  min-height: 100vh;
+  max-height: auto;
+  overflow-y: auto;
+  margin: 4rem auto;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+/* coursepurchesescontainer */
+.container .coursepurchesescontainer{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  overflow: hidden;
+}
+.coursepurchesescontainer .hodingimage{
+  width: 50%;
+}
+.hodingimage .discountimage{
+  display: inline-block;
+  width: 60px;         
+  height: 60px;        
+  background-color: var(--body_red);
+  color: #fff;
+  border-radius: 50%;
+  padding: 16px 2px;
+  transform: translate(-220px,20px);
+  position: relative;
+  z-index: 1;
+}
+.hodingimage .image{
+  width: 100%;
+  margin: auto;
+  transform: translateY(-40px);
+}
+
+/* course purchases */
+.coursepurchesescontainer .coursepurcheses{
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+}
+.coursepurcheses .linkul{
+  list-style: none;
+  display: flex;
+  padding: 0 18px;
+}
+.coursepurcheses .linkul li, .coursepurcheses ul li .link{
+  color: rgb(160, 157, 157);
+}
+.link:hover{
+  text-decoration: underline;
+  cursor: pointer;
+}
+.coursepurcheses .uncategorized{
+  color: var(--body_red);
+  text-align: left;
+  padding: 0 18px;
+}
+.coursepurcheses .heading{
+  text-align: left;
+  padding: 0 18px;
+  font-size: 1.6rem;
+  font-weight: bold;
+  transform: translateY(-20px);
+  font-family: 'Roboto','Oswal',sans-serif,Arial, Helvetica, sans-serif;
+}
+.coursepurcheses .price{
+  text-align: left;
+  padding: 0 18px;
+  transform: translateY(-30px);
+  /* display: flex;
+  flex-direction: row;
+  gap: 5px; */
+  font-size: 1.5rem;
+  color: var(--body_color);
+}
+.price .lighttext{
+  opacity: 0.4;
+}
+.price .boldtext{
+  opacity: 0.6;
+}
+.coursepurcheses .listul li{
+  list-style: none;
+  text-align: left;
+  padding: 0 18px;
+  color: var(--body_color);
+}
+.coursepurcheses .buttonsection{
+  transform: translate(-150px,12px);
+}
+.coursepurcheses .applybtn{
+  background-color: var(--body_red);
+  color: #fff;
+  width: 200px;
+  font-size: 1.3rem;
+  padding: 12px 18px;
+  border-radius: 44px;
+}
+.applybtn:hover{
+  border: 1px solid var(--body_color);
+}

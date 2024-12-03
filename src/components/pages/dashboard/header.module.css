@@ -1,0 +1,14 @@
+/* src/components/Header.module.css */
+.header {
+  padding: 20px;
+  color: var(--body_color);
+  border-bottom: 1px solid #ddd;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.userMenu {
+  display: flex;
+  align-items: center;
+}

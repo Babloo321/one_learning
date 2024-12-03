@@ -1,0 +1,57 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow-x: auto;
+  
+}
+body::-webkit-scrollbar {
+  display: none; /* Hides scrollbar */
+}
+
+.App {
+  height: 100%;
+  text-align: center;
+  background-color: var(--body_background);
+  color: var(--body_color);
+  overflow-x: hidden;
+}
+
+@media screen and(max-width:1024px) {
+  .App{
+    height: 100%;
+    width: 100%;
+    max-width: 1024px;
+  }
+}
+
+@media  source and (max-width:900px) {
+  .App{
+    height: 100%;
+    max-width: 900px;
+  }
+}
+@media  source and (max-width:700px) {
+  .App{
+    height: 100%;
+    max-width: 700px;
+  }
+}
+@media  source and (max-width:480px) {
+  .App{
+    height: 100%;
+    max-width: 480px;
+  }
+}
+@media  source and (max-width:320px) {
+  .App{
+    height: 100%;
+    max-width: 320px;
+  }
+}

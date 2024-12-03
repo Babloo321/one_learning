@@ -1,0 +1,46 @@
+
+.sliderContainer {
+  overflow: hidden;
+  width: 750px;
+  margin: auto;
+  position: relative;
+}
+
+.imageContainer {
+  display: flex;
+  animation: slide 15s alternate-reverse infinite;
+}
+
+.imageContainer:hover {
+  animation-play-state: paused;
+}
+
+.image {
+  max-width: 260px;
+  height: 242px;
+  object-fit: cover;
+  margin: 5px;
+}
+
+@keyframes slide {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+
+@media (min-width: 1024px) {
+
+}
+
+
+@media (min-width: 768px) and (max-width: 1023px) {
+ 
+}
+
+@media (max-width: 767px) {
+
+}

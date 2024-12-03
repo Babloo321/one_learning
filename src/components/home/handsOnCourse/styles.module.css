@@ -1,0 +1,243 @@
+.upcomingTraining {
+  width: 80%;
+  margin: auto;
+  background-color: var(--body_background);
+  color: var(--body_color);
+}
+.upcomingTraining .container{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  flex-wrap: wrap;
+  overflow: hidden;
+  justify-content: center;
+  align-items: center;
+}
+.upcomingTraining .heading{
+  margin: 2rem 0;
+  font-size: 2rem;
+  font-weight: bold;
+  text-align: center;
+  color: var(--body_color);
+  font-family: 'Oswal', 'Roboto','Lato',sans-serif;
+}
+.upcomingTraining .container .item{
+  padding: 15px 12px;
+  border-radius: 22px;
+  background-color: var(--body_color);
+  color: var(--body_background);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.item .time p{
+  color: var(--body_red);
+  font-weight: bold;
+}
+.item .coursename p{
+  margin: 6px 0;
+  font-size: 1.1rem;
+  font-weight: bold;
+}
+.item .address p{
+  margin: 6px 0;
+}
+.item .registerBtn .btn{
+  background-color: var(--body_red);
+  color:#fff;
+  font-size: 1rem;
+  font-family: 'roboto','Lato', sans-serif;
+  border: none;
+  border-radius: 36px;
+  padding:12px;
+  margin: 12px 0;
+  cursor: pointer;
+  width: 100%;
+}
+.upcomingTraining .btnContainer .btn{
+  background-color: var(--body_color);
+  color: var(--body_background);
+  font-size: 1rem;
+  font-family: 'Roboto', 'Roboto', sans-serif;
+  padding: 0.5rem;
+  border-radius: 2rem;
+  cursor: pointer;
+  transform: translate(440px, 5px);
+}
+.upcomingTraining .btnContainer .btn:hover {
+  background-color: var(--body_red);
+  color: #fff;
+  padding: 0.5rem 1rem;
+  box-shadow: 2px 2px 2px 2px #ffffff;
+}
+/*
+
+
+@media screen and (min-width: 1024px) {
+  .upcomingTraining {
+    min-width: 1024px;
+    max-width: auto;
+  }
+  .grid_container {
+    min-width: 1024px;
+    max-width: 80%;
+    margin: auto;
+    gap: 1rem;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    overflow: hidden;
+    justify-content: space-between;
+
+  }
+  .grid_item {
+    flex: 1;
+    height: auto;
+  }
+  .upcomingTraining .btn {
+    font-size: 1rem;
+    font-family: 'roboto','oswal',sans-serif;
+    padding: 8px 12px;
+    overflow: hidden;
+    transform: translate(400px, 16px);
+  }
+  .hr {
+    width: 74%;
+    text-align: center;
+    margin-left: 10px;
+  }
+}
+  */
+  /*
+@media screen and (min-width: 768px) and (max-width:1023px) {
+  .upcomingTraining {
+    min-width: 768px;
+    max-width: 1023px;
+  }
+  .grid_container {
+    min-width: 80%;
+    max-width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    gap: 1rem;
+    flex-direction: row;
+    flex-wrap: wrap;
+    overflow: hidden;
+  }
+  .grid_item {
+    min-width: 200px;
+    max-width: 300px;
+    height: auto;
+  }
+  .upcomingTraining .btn {
+    font-size: 1rem;
+    font-family: 'roboto','oswal',sans-serif;
+    padding: 8px 12px;
+    overflow: hidden;
+    transform: translate(200px, 6px);
+  }
+  .hr {
+    width: 74%;
+    text-align: center;
+    margin-left: 100px;
+  }
+  .registerBtn {
+    width: 80%;
+  }
+}
+*/
+@media screen and (max-width: 767px) {
+  .upcomingTraining {
+    min-width: 320px;
+    max-width: 767px;
+  }
+  .upcomingTraining .container {
+    min-width: 320px;
+    max-width: 100%;
+     padding: 0;
+     margin: 0;
+     display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
+  }
+  .container .item {
+    padding: 6px 3px;
+    margin: 0;
+    width: 300px;
+      margin: 0;
+      min-height: 150px;
+      max-height: auto;
+  }
+  .hr {
+    display: none;
+  }
+  .upcomingTraining .btn {
+    transform: translate(0, 30%);
+    width: 80%;
+  }
+  .upcomingTraining .heading {
+    font-size: 2rem;
+    font-family: 'Roboto', 'Oswal', 'Lato', sans-serif;
+    color: var(--body_color);
+    margin-bottom: 12px;
+  }
+  .container .item .time p {
+    font-size: 1.5rem;
+    padding: 0.5rem 12px;
+  }
+  .container .item .coursename p {
+    font-size: 1rem;
+    font-family: 'Roboto', 'Oswal', 'Lato', sans-serif;
+    font-weight: 400;
+    cursor: pointer;
+    margin: 2px 0;
+  }
+
+  .container .item .registerBtn .btn {
+    font-size: 1rem;
+    font-family: 'roboto','Lato', sans-serif;
+    border: none;
+    border-radius: 36px;
+    padding:12px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    background-color: var(--body_background);
+    color: var(--body_color);
+    width: 100%;
+  }
+
+  .container .item .registerBtn .btn:hover {
+    background-color: var(--body_red);
+    font-size: 13px;
+    font-family: 'roboto','Lato', sans-serif;
+    border: none;
+    border-radius: 36px;
+    padding:8px 3px;
+    cursor: pointer;
+    color: var(--body_color);
+    width: 80%;
+    cursor: pointer;
+    width: 90%;
+  }
+  .upcomingTraining .btnContainer .btn {
+    margin: 1rem 0;
+    background-color: var(--body_red);
+    color: #fff;;
+    font-size: 1rem;
+    font-family: 'roboto','oswal',sans-serif;
+    padding:12px;
+    overflow: hidden;
+    transform: translate(0, 0);
+    cursor: pointer;
+    border: none;
+    border-radius: 36px;
+  }
+}

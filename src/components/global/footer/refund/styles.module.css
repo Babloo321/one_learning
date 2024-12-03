@@ -1,0 +1,37 @@
+.container{
+  width: 100%;
+  max-width: 80%;
+  margin: 6rem auto 4rem auto;
+}
+.top h3{
+  font-size: 1.6rem;
+}
+.top h3, .top p{
+  color: var(--body_color);
+  text-align: justify;
+  margin-top: 1.5rem;
+  word-spacing: 6px;
+  line-height: 22px;
+}
+.eligibility ol .olList .heading{
+  color: var(--body_color);
+  font-size: 1rem;
+  font-weight: bold;
+  text-align: left;
+  padding-top: 2rem;
+}
+.eligibility ul p{
+  color: var(--body_color);
+  text-align: left;
+  padding: 2rem 0 1rem 1rem;
+}
+.eligibility ol ul li{
+  color: var(--body_color);
+  list-style: disc;
+  text-align: left;
+  margin: 0.3rem 0 0 4rem;
+  line-height: 1.5rem;
+}
+.license ul li:first-child, .hyperlink ul li:first-child, .disclaimer ul li:first-child{
+  margin-top: 2rem;
+}

@@ -1,0 +1,62 @@
+.container{
+  width: 90%;
+  margin: 2rem auto;
+  background-color: var(--body_background);
+  color: var(--body_color);
+}
+.container .heading{
+  font-size: 2rem;
+  font-weight: bold;
+  text-align: center;
+  color: var(--body_color);
+  font-family: 'Oswal', 'Roboto','Lato',sans-serif;
+}
+.courses{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  overflow: hidden;
+  gap: 25px;
+  justify-content: center;
+  align-items: center;
+}
+.item{
+  border: 1px solid var(--body_color);
+  border-radius: 22px;
+  /* padding: 12px 6px; */
+  padding: 2rem;
+  color: var(--body_background);
+  background-color: var(--body_color);
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.item .time p{
+  font-size: 1rem;
+  font-weight: bold;
+  color: var(--body_background);
+  text-align: center;
+  font-family: 'Oswal', 'Roboto','Lato',sans-serif;
+}
+.item .coursename p{
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: var(--body_red);
+  text-align: center;
+  font-family: 'Oswal', 'Roboto','Lato',sans-serif;
+}
+.item .btn{
+  background-color: var(--body_red);
+  color: #ffffff;
+  font-size: 1rem;
+  font-family: 'Roboto', 'Roboto', sans-serif;
+  padding:0.5rem;
+  border-radius: 2rem;
+  cursor: pointer;
+}
+.item .btn:hover{
+  background-color: var(--body_background);
+  color: #141414;
+  padding: 6px;
+  box-shadow: 2px 2px 2px 2px #ffffff;
+}

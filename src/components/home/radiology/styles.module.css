@@ -1,0 +1,228 @@
+.upcomingTraining {
+  width: 100%;
+  max-width: 80%;
+  margin: 50px auto 0 auto;
+}
+.upcomingTraining h2 {
+  font-size: 2rem;
+  font-family: 'Roboto', 'Oswal', 'Lato', sans-serif;
+  color: var(--body_color);
+  margin-bottom: 3rem;
+}
+.upcomingTraining .btn {
+  background-color: var(--body_color);
+  color: var(--body_background);
+  font-size: 1rem;
+  font-family: 'Roboto', 'Roboto', sans-serif;
+  padding: 0.5rem;
+  border-radius: 2rem;
+  cursor: pointer;
+  transform: translate(440px, 5px);
+}
+.upcomingTraining .btn:hover {
+  background-color: var(--body_red);
+  color: var(--body_color);
+  padding: 0.5rem 1rem;
+  box-shadow: 2px 2px 2px 2px #ffffff;
+}
+.grid_container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  overflow: hidden;
+  gap: 1rem;
+  width: 100%;
+  height: auto;
+}
+
+.grid_container .grid_item {
+  background: var(--body_color);
+  border: 1px solid #ccc;
+  color: var(--body_background);
+  border-radius: 2rem;
+  padding: 1rem;
+  width: 200px;
+}
+
+.grid_container .grid_item h3 {
+  font-size: 1rem;
+  font-family: 'Roboto', 'Oswal', 'Lato', sans-serif;
+  padding: 0.5rem;
+  font-weight: 500;
+  cursor: pointer;
+  color: var(--body_red);
+}
+.grid_container .grid_item .registerBtn {
+  font-size: 1rem;
+  font-family: 'Lato', sans-serif;
+  padding:1rem;
+  border: none;
+  border-radius: 2rem;
+  cursor: pointer;
+  background-color: var(--body_background);
+  color: var(--body_color);
+}
+.grid_container .grid_item .registerBtn:hover {
+  background-color: var(--body_red);
+  color: #fff;
+  padding: 1rem 1.5rem;
+  box-shadow: 2px 2px 2px 2px #ffffff;
+  cursor: pointer;
+}
+.hr {
+  width: 890px;
+  text-align: center;
+}
+
+@media screen and (min-width:1024px) {
+  .upcomingTraining {
+    min-width: 1024px;
+    max-width: auto;
+  }
+  .upcomingTraining .grid_container {
+    min-width: 1024px;
+    max-width: 80%;
+    margin: auto;
+    gap: 1rem;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    overflow: hidden;
+    justify-content: space-between;
+    /* align-items: center; */
+  }
+  .grid_item {
+    flex: 1;
+    height: auto;
+  }
+  .grid_item h3{
+ font-size: 222px;
+  }
+  .grid_container .grid_item .registerBtn {
+    font-size: 1rem;
+    font-family: 'Lato', sans-serif;
+    padding:12px 10px;
+    border: none;
+    border-radius: 2rem;
+    cursor: pointer;
+    background-color: var(--body_background);
+    color: var(--body_color);
+  }
+  .upcomingTraining .btn {
+    font-size: 1rem;
+    font-family: 'roboto','oswal',sans-serif;
+    padding: 8px 12px;
+    overflow: hidden;
+    transform: translate(400px, 16px);
+  }
+  .hr {
+    width: 90%;
+    text-align: center;
+    margin-left: 10px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width:1023px) {
+  .upcomingTraining {
+    min-width: 768px;
+    max-width: 1023px;
+  }
+  .grid_container {
+    min-width: 768px;
+    max-width: 90%;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+  }
+  .grid_item {
+    min-width: 200px;
+    max-width: 300px;
+    height: auto;
+  }
+  /* .hr {
+    display: none;
+  } */
+  .upcomingTraining .btn {
+    font-size: 1rem;
+    font-family: 'roboto','oswal',sans-serif;
+    padding: 8px 12px;
+    overflow: hidden;
+    transform: translate(200px, 6px);
+  }
+  .hr {
+    width: 74%;
+    text-align: center;
+    margin-left: 100px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .upcomingTraining {
+    min-width: 320px;
+    max-width: 767px;
+  }
+  .upcomingTraining .grid_container {
+    min-width: 320px;
+    max-width: 90%;
+     padding: 0;
+     margin: auto;
+     display: flex;
+    flex-direction: row;
+    flex-wrap:wrap;
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
+  }
+.grid_container .grid_item {
+  padding: 6px 3px;
+  margin: 0;
+    min-width: 30%;
+    max-width: 50%;
+    margin: 0;
+    min-height: 150px;
+    max-height: 200px;
+  }
+  .hr {
+    display: none;
+  }
+  .upcomingTraining .btn {
+    transform: translate(0, 30%);
+    width: 80%;
+  }
+  .upcomingTraining h2 {
+    font-size: 2rem;
+    font-family: 'Roboto', 'Oswal', 'Lato', sans-serif;
+    color: var(--body_color);
+    margin-bottom: 12px;
+  }
+  .grid_container .grid_item h3 {
+    font-size: 0.8rem;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    cursor: pointer;
+    padding-top: 32px;
+  }
+  .upcomingTraining .grid_container .grid_item  .registerBtn{
+    padding: 8px 14px;
+    font-size: 13px;
+    width: 80%;
+    margin-top: 42px;
+  }
+  .grid_container .grid_item .registerBtn:hover {
+    background-color: var(--body_red);
+    font-size: 13px;
+    font-family: 'roboto','Lato', sans-serif;
+    border: none;
+    border-radius: 36px;
+    padding:8px 3px;
+    cursor: pointer;
+    color: var(--body_color);
+    width: 80%;
+    cursor: pointer;
+    width: 90%;
+  }
+  .upcomingTraining .btn {
+    transform: translate(0, 30%);
+    width: 80%;
+  }
+}

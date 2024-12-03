@@ -1,0 +1,85 @@
+/* components/styles.module.css */
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background: var(--body_background);
+  color: var(--body_color);
+}
+
+.formContainer {
+  width: 100%;
+  max-width: 400px;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px var(--body_color);
+  background-color: var(--body_background);
+  text-align: center;
+}
+
+.heading {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+  color: var(--body_color);
+}
+
+.input {
+  width: 100%;
+  padding: 0.8rem;
+  margin: 0.5rem 0;
+  border-radius: 4px;
+  border: 1px solid #ddd;
+  font-size: 1rem;
+}
+
+.button {
+  width: 100%;
+  padding: 0.8rem;
+  margin-top: 1rem;
+  border: none;
+  border-radius: 4px;
+  background-color: #4a90e2;
+  color:var(--body_color);
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.button:hover {
+  background-color: #357ABD;
+}
+
+.linkText {
+  margin-top: 1rem;
+  color: #4a90e2;
+  cursor: pointer;
+  font-size: 0.9rem;
+  text-decoration: underline;
+}
+
+
+@media screen and (min-width:1024px){
+  .container{
+    min-width: 1024px;
+    max-width: 80%;
+    margin: auto;
+  }
+}
+
+@media screen and (min-width:768px) and (max-width:1023px){
+  .container{
+    min-width: 768px;
+    max-width: 90%;
+    margin: auto;
+  }
+}
+
+@media screen and (max-width:767px){
+  .container{
+    min-width: 320px;
+    max-width: 767px;
+    margin: 0;
+  }
+}

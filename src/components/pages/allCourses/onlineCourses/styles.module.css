@@ -1,0 +1,123 @@
+
+.section {
+  margin: 0;
+  padding: 0;
+  min-width: 70%;
+  max-width: 80%;
+  min-height: 100vh;
+  max-height: auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap; 
+  overflow-y: hidden;
+}
+.section .sectionheading{
+  transform:translate(150px);
+  padding: 2rem 0;
+}
+.section .sectionheading hr{
+  width: auto;
+  height: 2px;
+  border:2px solid var(--body_color);
+  transform: translateX(-88px);
+  color: var(--body_color);
+}
+.section .sectionheading p{
+  font-weight: bolder;
+  font-size: 2.3rem;
+  font-family: 'Oswal';
+  transform: translateX(-35%);
+  color: var(--body_color);
+}
+
+.grid_container {
+  min-height: 100vh;
+  max-height: auto;
+  width: 80%;
+  margin: auto;
+  margin-bottom: 3rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: first baseline;
+  flex-wrap: wrap;
+  gap: 1rem;
+  width: 100%;
+  height: auto;
+}
+
+.grid_container .grid_item {
+  margin-left: 4rem;
+  min-width: 250px;
+  height: 250px;
+ /* max-height: 300px; */
+  max-width: 300px;
+  background: var(--body_color);
+  border: 1px solid #ccc;
+  color: var(--body_background);
+  border-radius: 2rem;
+  padding: 1.3rem;
+  box-shadow: -4px -6px 4px 3px var(--body_color);
+  border: none;
+
+}
+
+
+.mode {
+  display: inline-block;
+  transform: translate(70%,-65%);
+  color: #da1b36;
+  font-weight: 700;
+}
+.liveMode{
+  display: inline-block;
+  transform: translate(220%,-65%);
+  color: #38da1b;
+  font-weight: 700;
+}
+/* Title styling */
+.title {
+  font-size: 1rem;
+  color: var(--body_background);
+}
+
+/* Time and mentor styling */
+.time{
+  margin: 5px 0;
+  color: var(--body_background);
+}
+.mentor{
+  font-size: 0.8rem;
+  color:#da1b36;
+  font-family: 'Lato','Oswal','Roboto',sans-serif;
+}
+
+/* Button styling */
+.btn {
+  margin: 10px 1rem;
+  padding: 0.8rem 1rem;
+  background-color: #007bff; /* Blue background */
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  text-align: center;
+  transition: background-color 0.3s;
+}
+.cardbtn{
+  margin: 2rem 1rem;
+  padding: 0.8rem 1rem;
+  background-color: #007bff; /* Blue background */
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  text-align: center;
+  transition: background-color 0.3s;
+}
+.cardbtn:hover{
+  background-color: #0056b3; /* Darker blue on hover */
+}
+.btn:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+}

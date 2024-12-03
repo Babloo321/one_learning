@@ -1,0 +1,20 @@
+.container{
+  width: 100%;
+  max-width: 80%;
+  margin: 4rem auto;
+}
+.terms h3, .terms h1,.terms p,.terms article, .cookies h2, .cookies p, .license p, .hyperlink h2, .hyperlink p, .iframes h2, .iframes p, .liability h2, .liability p, .reservation h2, .reservation p, .removal h2, .removal p, .disclaimer h2, .disclaimer p{
+  color: var(--body_color);
+  text-align: justify;
+  margin-top: 1.5rem;
+  word-spacing: 6px;
+  line-height: 22px;
+}
+.license ul li, .hyperlink ul li, .disclaimer ul li{
+  list-style: disc;
+  text-align: left;
+  margin: 0.3rem 0 0 4rem;
+}
+.license ul li:first-child, .hyperlink ul li:first-child, .disclaimer ul li:first-child{
+  margin-top: 2rem;
+}

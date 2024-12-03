@@ -1,0 +1,358 @@
+.parnetContainer{
+  width: 100%;
+  max-width: 80%;
+  margin: 4rem auto 2rem auto;
+}
+.heading{
+  font-size: 2rem;
+  font-family: 'Roboto','Oswal','Lato',sans-serif;
+}
+.partnerSection {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-top: 6rem;
+}
+
+.partnerCard {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem;
+  /* border: 1px solid #ddd; */
+  border-radius: 8px;
+}
+
+.partnerCardReverse {
+  flex-direction: row-reverse; /* For alternating layout */
+}
+
+.partnerImage {
+  flex: 1;
+  width: 150px;
+  height: 350px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.partnerContent {
+  flex: 1;
+  max-width: 600px;
+}
+
+.partnerHeading {
+  font-size: 2rem;
+  font-family: 'Roboto','Oswal',sans-serif;
+  text-align: center;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.partnerText {
+  text-align: justify;
+  font-size: 1rem;
+  line-height: 1.6;
+  padding: 2rem;
+}
+.applyBtn{
+  width: 25%;
+  padding: 0.5rem;
+  border-radius: 2rem;
+  background-color: #da1b36;
+  color: var(--body_color);
+  font-size: 1rem;
+  font-family: 'Oswal';
+  border: 1px solid var(--body_color);
+  cursor: pointer;
+  font-weight: 700;
+}
+.applyBtn:hover{
+  background-color: var(--body_color);
+  color: var(--body_background);
+  border: 3px solid #da1b36;
+  cursor: pointer;
+}
+.whatsNew{
+  margin-top: 4rem;
+}
+.whatsNew h1{
+  font-size: 2rem;
+  padding: 1.5rem;
+  font-family: 'Roboto','Oswal','Lato',sans-serif;
+}
+
+.helpContainer {
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  justify-content: space-around;
+  flex-wrap: wrap; /* Allows items to wrap on smaller screens */
+  padding: 1rem;
+}
+
+.helpCard {
+  background-color: var(--body_color);
+  color: var(--body_background);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 2rem;
+  border: 1px solid var(--body_color);
+  border-radius: 8px;
+  width: 250px; /* Set a fixed width for consistent layout */
+}
+
+
+.helpTitle {
+  margin-top: 1rem;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.helpDescription {
+  margin-top: 1rem;
+  text-align: center;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+@media screen and (min-width:1024px){
+  .parnetContainer{
+    min-width: 1024px;
+    max-width: auto;
+  }
+  .parnetContainer .heading{
+    color: var(--body_red);
+    font-weight: bolder;
+  }
+  .parnetContainer .partnerSection{
+    gap: 8px;
+    margin: 2rem 4rem;
+  }
+  .partnerSection .partnerCard{
+    border-bottom-width: 12px;
+    border-bottom-left-radius: 32px;
+    border-bottom-right-radius: 32px;
+    border-bottom-color: var(--body_color);
+    border-bottom-style: solid;
+  }
+  .partnerSection .partnerImage{
+    width: 100%;
+    min-height: 350px;
+    max-height: 500px;
+    object-fit:cover;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+    border-radius: 8px;
+    padding: 8px 12px;
+  }
+  .partnerSection .partnerContent {
+    max-width: 100%;
+    
+  }
+  .partnerText{
+    text-align: start;
+    padding: 0;
+    font-size: 1.2rem;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 600;
+    opacity: 0.6;
+    text-align: left;
+    
+  }
+  .partnerHeading{
+    font-size: 2.5rem;
+    padding: 0;
+    margin: 12px auto;
+    color: var(--body_color);
+  }
+  .applyBtn{
+    margin-top: 1rem;
+    width: 80%;
+    color: var(--body_background);
+    padding: 12px 22px;
+    font-size: 1.2rem;
+  }
+
+  /* Whats's new  p, h1*/
+  .whatsNew{
+    width: 80%;
+    margin: auto;
+    margin-top: 2rem;
+  }
+  .whatsNew h1{
+    font-size: 2rem;
+    font-weight: bold;
+    letter-spacing: 3px;
+    padding: 8px 12px;
+  }
+  .whatsNew p{
+    font-size: 1.3rem;
+    padding: 8px 12px;
+    line-height: auto;
+  }
+
+  /* Help container */
+}
+
+@media screen and (min-width:768px) and (max-width:1023px){
+  .parnetContainer{
+    min-width: 768px;
+    max-width: 1023px;
+    margin: 2rem auto;
+  }
+  .parnetContainer .heading{
+    font-size: 2.3rem;
+    color: var(--body_red);
+    font-weight: bolder;
+  }
+  .parnetContainer .partnerSection{
+    gap: 8px;
+    margin: 2rem 4rem;
+  }
+  .partnerSection .partnerCard{
+    border-bottom-width: 12px;
+    border-bottom-left-radius: 32px;
+    border-bottom-right-radius: 32px;
+    border-bottom-color: var(--body_color);
+    border-bottom-style: solid;
+    flex-direction: row;
+    gap: 0.5rem;
+    padding: 12px 0;
+  }
+  .partnerSection .partnerImage{
+    width: 100%;
+    min-height: 200px;
+    max-height: 300px;
+    object-fit:cover;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+    border-radius: 8px;
+    padding: 8px 12px;
+  }
+  .partnerSection .partnerContent {
+    max-width: 100%;
+    
+  }
+  .partnerText{
+    text-align: start;
+    padding: 0;
+    font-size: 1rem;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 600;
+    opacity: 0.6;
+    text-align: left;
+    
+  }
+  .partnerHeading{
+    font-size: 1.8rem;
+    padding: 0;
+    margin: 12px auto;
+    
+  }
+  .applyBtn{
+    width: 80%;
+    color: var(--body_background);
+    padding: 8px 16px;
+    font-size: 1.2rem;
+  }
+
+  /* Whats's new  p, h1*/
+  .whatsNew{
+    margin-top: 2rem;
+  }
+  .whatsNew h1{
+    font-size: 1.3rem;
+    font-weight: bold;
+    letter-spacing: 3px;
+    padding: 8px 12px;
+  }
+  .whatsNew p{
+    font-size: 1.1rem;
+    padding: 8px 12px;
+    line-height: auto;
+  }
+
+  /* Help container */
+}
+
+@media screen and (max-width:767px){
+  .parnetContainer{
+    min-width: 320px;
+    max-width: 767px;
+    margin: 1rem auto;
+  }
+  .parnetContainer .heading{
+    font-size: 1.5rem;
+    color: var(--body_red);
+    font-weight: bolder;
+  }
+  .parnetContainer .partnerSection{
+    gap: 8px;
+    margin-top: 2rem;
+  }
+  .partnerSection .partnerCard{
+    border-bottom-width: 12px;
+    border-bottom-left-radius: 32px;
+    border-bottom-right-radius: 32px;
+    border-bottom-color: var(--body_color);
+    border-bottom-style: solid;
+    flex-direction: column;
+    gap: 0.5rem;
+    padding: 12px 0;
+  }
+  .partnerSection .partnerImage{
+    width: 100%;
+    min-height: 200px;
+    max-height: 300px;
+    object-fit:cover;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+    border-radius: 8px;
+    padding: 8px 12px;
+  }
+  .partnerSection .partnerContent {
+    max-width: 100%;
+    
+  }
+  .partnerText{
+    text-align: start;
+    padding: 1rem;
+    
+  }
+  .partnerHeading{
+    font-size: 1.5rem;
+    padding: 0;
+    margin: 12px auto;
+    
+  }
+  .applyBtn{
+    width: 80%;
+    color: var(--body_background);
+    padding: 8px 16px;
+    font-size: 1.2rem;
+  }
+
+  /* Whats's new  p, h1*/
+  .whatsNew{
+    margin-top: 2rem;
+  }
+  .whatsNew h1{
+    font-size: 1.3rem;
+    font-weight: bold;
+    letter-spacing: 3px;
+    padding: 8px 12px;
+  }
+  .whatsNew p{
+    font-size: 1.1rem;
+    padding: 8px 12px;
+    line-height: auto;
+  }
+
+  /* Help container */
+}

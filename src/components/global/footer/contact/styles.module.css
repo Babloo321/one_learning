@@ -1,0 +1,211 @@
+/* ContactForm.module.css */
+
+.contactContainer{
+  width: 100%;
+}
+.poster{
+  background: linear-gradient(45deg, #141414, #da1b36);
+  padding: 2rem;
+  height: 250px;
+}
+.poster h1{
+  margin-top: 20px;
+  line-height: 82px;
+  font-size: 3rem;
+  color:#fff;
+}
+.poster p{color: #fff;line-height: 22px;}
+.communication{
+  width: 80%;
+  margin: 4rem auto;
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+}
+.info{
+  flex: 1;
+  background-color: #1414;
+  padding: 1rem;
+}
+
+.contactUs {
+  max-width: 600px;
+  margin:4rem auto;
+  padding: 2rem;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 2rem;
+  color: #141414;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  text-align: justify;
+  gap: 1rem;
+}
+
+.formGroup {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+  color: #333;
+}
+
+input,
+textarea {
+  padding: 0.75rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+
+textarea {
+  resize: vertical;
+  min-height: 100px;
+}
+
+input:focus,
+textarea:focus {
+  outline: none;
+  border-color: #0073e6;
+}
+
+.submitButton {
+  padding: 0.75rem;
+  font-size: 1rem;
+  font-weight: bold;
+  color: #fff;
+  background-color: #0073e6;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.submitButton:hover {
+  background-color: #005bb5;
+}
+
+@media screen and (min-width:1024px){
+  .contactContainer{
+    min-width: 1024px;
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+  }
+  .poster{
+    width: 100%;
+    margin-top: -12px;
+  }
+
+  .communication{
+    min-width: 1024px;
+    margin: auto;
+    flex-direction: row;
+  }
+  .contactUs{
+    min-width: 60%;
+    max-width: 80%;
+    margin: 3rem 0;
+    justify-content: center;
+  }
+  .form{
+    min-width: 100%;
+    max-width: 80%;
+    margin: auto;
+   
+  }
+  input, textarea {
+    width: 90%;;
+  }
+  .submitButton{
+    width: 90%;
+    margin-bottom: 1rem;
+  }
+}
+
+@media screen and (min-width:768px) and (max-width:1023px){
+  .contactContainer{
+    min-width: 768px;
+    max-width: 100%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+
+  .poster{
+    width: 100%;
+    margin-top: -12px;
+  }
+
+  .communication{
+    min-width: 768px;
+    margin: auto;
+    flex-direction: row;
+  }
+  .contactUs{
+    min-width: 768px;
+    max-width: 90%;
+    margin: 2rem auto;
+    /* padding: 0 12px; */
+  }
+  .form{
+    min-width: 768px;
+    max-width: 80%;
+    margin: auto;
+  }
+  input, textarea {
+    width: 90%;;
+  }
+  .submitButton{
+    width: 90%;
+    margin-bottom: 1rem;
+  }
+}
+
+@media screen and (max-width:767px){
+  .contactContainer{
+    min-width: 320px;
+    max-width: 767px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .poster{
+    width: 100%;
+    margin-top: -12px;
+  }
+
+  .communication{
+    min-width: 320px;
+    margin: auto;
+    flex-direction: column;
+  }
+  .contactUs{
+    min-width: 320px;
+    max-width: 767px;
+  }
+  .form{
+    min-width: 320px;
+    max-width: 767px;
+  }
+  .submitButton{
+    margin-bottom: 1rem;
+  }
+
+}
