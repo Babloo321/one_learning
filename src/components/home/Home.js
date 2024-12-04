@@ -11,12 +11,14 @@ import GetIntouch from './getInTouch/GetIntouch';
 import ImageSlider from './imageSlider/ImageSlider';
 import images from '../../image/images';
 import BecomeMember from './becomeMemberPopUp/BecomeMember';
+import CourseContent from './afterLogin/CourseContent';
 import { useNavigate } from 'react-router-dom';
 const imageUrl =
   'https://onelearninghealthcare.com/wp-content/uploads/2022/06/testimonialblack-1024x444.png';
 const Home = () => {
   const navigate = useNavigate();
   const [showPopup, setShowPopup] = useState(false);
+  const token = localStorage.getItem('token');
   const togglePopup = () => {
     setShowPopup(!showPopup);
   };
@@ -39,7 +41,8 @@ const Home = () => {
       {/* this is section fro the home front-page */}
       <div className={styles.videoSection}>
         <div className={styles.videoContentSection}>
-          <div className={styles.imagesSlider}>
+        {
+          token ? <CourseContent /> :  <div className={styles.imagesSlider}>
             <ImageSlider images={images} className={styles.slider} />
             <div className={styles.buttonSection}>
               <button className={styles.member} onClick={togglePopup}>
@@ -51,6 +54,7 @@ const Home = () => {
               </button>
             </div>
           </div>
+        }
 
           <iframe
             className={styles.video}

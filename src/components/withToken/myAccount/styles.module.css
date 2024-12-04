@@ -1,4 +1,83 @@
 .myAccount{
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  justify-content: center;
+  align-items: center;
+  color: var(--body_color);
+}
+.myAccount .heading h1{
+  font-size: 2.5rem;
   font-weight: bold;
-  font-size: 3rem;
+  text-align: center;
+  color: var(--body_color);
+  font-family: 'Roboto',sans-serif;
+}
+.myAccount .heading p{
+  word-spacing: 12px;
+  font-size: 2rem;
+  text-align: center;
+  color: var(--body_color);
+  font-family: 'Roboto',sans-serif;
+}
+.myAccount .freeLecture, .myAccount .learningShow{
+  width: 100%;
+  margin: 0;
+  border-radius: 22px;
+}
+.freeLecture h1,.learningShow h1{
+  border-top-left-radius: 22px;
+  border-top-right-radius: 22px;
+  /* transform: translateY(-80%); */
+  background-color: var(--body_red);
+  font-size: 2rem;
+  font-family: 'Roboto',sans-serif;
+  padding: 6px 12px;
+  text-align: center;
+  color: #fff;
+}
+
+.freeLecture .container,.learningShow .container{
+  /* transform: translateY(-10%); */
+  width: 100%;
+  height: 400px;
+  display: flex;
+}
+
+.sidebar {
+  border-top: 1px solid var(--body_background);
+  width: 30%;
+  height: 100%;
+  overflow-y: auto;;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+}
+
+.sidebar li {
+  cursor: pointer;
+  padding: 10px;
+}
+.sidebar li:active { background-color: blueviolet; }
+.sidebar li:hover {
+  background-color: #ccc;
+}
+
+.content {
+  width: 70%;
+}
+.content .video{
+  width: 100%;height: 100%;
+}
+
+.myAccount .community{
+  width: 100%;
+}
+.community .image{
+  width: 100%;
+  margin-bottom: 2rem;
 }
