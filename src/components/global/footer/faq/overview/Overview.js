@@ -2,7 +2,12 @@ import React from 'react'
 import FaqHeader from '../faqHeader/FaqHeader'
 import styles from './styles.module.css';
 import Common from '../common/Common';
+import { useNavigate } from 'react-router-dom';
 function Overview() {
+  const navigate = useNavigate();
+  const handleSmartClassJoin = () =>{
+    navigate("/joinSmartClass");
+  }
   return (
     <>
     <FaqHeader />
@@ -15,7 +20,7 @@ function Overview() {
       <div className={styles.logoCont}>
         <img src='https://onelearninghealthcare.com/wp-content/uploads/2021/09/logo_one-removebg-preview-150x150.png' alt='logo' className={styles.logo}/>
         <p>ONE|Learning smart class</p>
-        <button>Register Now</button>
+        <button onClick={handleSmartClassJoin}>Register Now</button>
       </div>
     </div>
 
@@ -38,7 +43,7 @@ function Overview() {
       <div className={styles.buttonSection}>
         <h1>Smart Class – Kashmir 2022 | Infertility & IUI</h1>
         <p>Onelearning invites you on “ Infertility & IUI” hands-on training program </p>
-        <button className={styles.btn}>Join Smart Class</button>
+        <button className={styles.btn} onClick={handleSmartClassJoin}>Join Smart Class</button>
       </div>
       <div className={styles.image}>
         <img src='https://onelearninghealthcare.com/wp-content/uploads/2021/10/facade-1024x640.png' alt='building' className={styles.img}/>
@@ -64,7 +69,7 @@ function Overview() {
       </div>
     </div>
     </div>
-      <Common />
+      <Common smartClassJoin={handleSmartClassJoin}/>
     </>
   )
 }

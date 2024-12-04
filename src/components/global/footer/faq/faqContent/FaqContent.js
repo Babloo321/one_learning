@@ -98,6 +98,8 @@ function FaqContent () {
     setOpenIndex(openIndex === index ? null : index);
   };
 
+
+
   return (
     <div className={styles.faqContainer}>
       <h2>Frequently Asked Questions</h2>

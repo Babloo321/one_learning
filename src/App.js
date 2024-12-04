@@ -29,6 +29,7 @@ import CityRegistration from './components/pages/oneAcademy/courseForm/CityRegis
 import BecomeMember from './components/pages/partnerWithUs/becomingMember/BecomeMember.js';
 import ComingSoonRegisterNow from './components/home/commingSoonCourses/registerNow/ComingSoonRegisterNow.js';
 import HandsOnAllCourses from './components/home/handsOnCourse/handsOnAllCourses/HandsOnAllCourses.js';
+import MyAccount from './components/withToken/myAccount/MyAccount.js';
 function App() {
   return (
     <div className="App">
@@ -52,7 +53,9 @@ function App() {
         <Route path='/overview' element={<Overview />} />
         <Route path='/aboutprogram' element={<AboutProgram />} />
         <Route path='/event' element={<Event />} />
+        <Route path='/joinSmartClass' element={<Apply />} />
         <Route path='/apply' element={<Apply />} />
+
         <Route path='/ultraSoundCourse' element={<UltraSoundCourse />} />
         <Route path='/masterRadiologyInvention' element={<MasterRadiologyInvention />} />
         <Route path='/breastUltrasoundInvention' element={<BreastUltrasoundIntervention />} />
@@ -60,6 +63,10 @@ function App() {
         <Route path='/becomeMember' element={<BecomeMember />} />
         <Route path='/comingSoonRegisterNow' element={<ComingSoonRegisterNow />} />
         <Route path='/handsOnAllCourses' element={<HandsOnAllCourses />} />
+
+        {/* after login */}
+        <Route path='/my-account' element={<MyAccount />} />
+
       </Routes>
       <Footer />
     </div>

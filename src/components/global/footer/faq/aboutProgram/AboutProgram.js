@@ -2,6 +2,7 @@ import React from 'react';
 import FaqHeader from '../faqHeader/FaqHeader';
 import styles from './styles.module.css';
 import Common from '../common/Common.js';
+import { useNavigate } from 'react-router-dom';
 const smartClassData = [
   {
     id: 1,
@@ -40,6 +41,10 @@ const smartClassData = [
   },
 ];
 function AboutProgram() {
+  const navigation = useNavigate();
+  const handleSmartClassJoin = () => {
+    navigation("/joinSmartClass");
+  }
   return (
     <>
       <FaqHeader />
@@ -84,7 +89,7 @@ function AboutProgram() {
           </div>
         </div>
       </div>
-        <Common />
+        <Common smartClassJoin={handleSmartClassJoin}/>
     </>
   );
 }
