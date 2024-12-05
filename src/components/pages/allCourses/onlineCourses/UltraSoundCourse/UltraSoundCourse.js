@@ -7,6 +7,7 @@ import { FaChalkboardTeacher } from "react-icons/fa";
 import { IoVideocam } from "react-icons/io5";
 import { RiCommunityFill } from "react-icons/ri";
 import { BsCheck } from "react-icons/bs";
+import OnlineCoursesCurriculam from './onlineCoursesCurriculam/OnlineCoursesCurriculam';
 const courseDetails = [
   {id:1, heading:"Online Course", description:"Live Masterclasses",overLinePrice:"25,000",fixedPrice:"15,000",gst:"Excl. GST",duration:"Course Duration : 6 Months"},
   {id:2, heading:"Blended (Online + Offline", description:"Live + Hands-On-Session",overLinePrice:"45,000",fixedPrice:"30,000",gst:"Excl. GST",duration:"Course Duration : 6 Months"},
@@ -174,7 +175,7 @@ function UltraSoundCourse() {
           <img src='https://onelearninghealthcare.com/wp-content/uploads/2022/12/WhatsApp-Image-2022-10-20-at-11.30.52-PM-1024x461.jpeg' alt='vizagimage' className={styles.centerimage}/>
           <p>Hands-on Training Center - Vizag, Andhra Pradesh</p>
       </div>
-
+          <OnlineCoursesCurriculam />
       <div className={styles.curriculam}>
           <h1>Hands-on Course Curriculam</h1>
           <div className={styles.days}>

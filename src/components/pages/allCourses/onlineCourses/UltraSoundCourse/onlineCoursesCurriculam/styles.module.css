@@ -1,0 +1,59 @@
+.container {
+  position: relative;
+  width: 80%;
+  margin: 0 auto;
+  padding: 20px;
+}
+.heading{
+  width: 80%;
+  margin: 4rem auto 2rem auto;
+  font-size: 2.5rem;
+  font-family: 'Roboto',sans-serif;
+  font-weight: bold;
+  text-align: left;
+  color: var(--body_color);
+}
+.verticalLine {
+  position: absolute;
+  left: 34px; /* Adjust this value to align the line with the center of the icons */
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background-color: blue;
+}
+
+.item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 30px;
+  position: relative;
+}
+
+.icon {
+  border-radius: 4px;
+  font-size: 34px;
+  margin-right: 10px;
+  background-color: black;
+  color: white;
+  padding: 4px;
+}
+
+.icon.inactive {
+  background-color: black;
+  color: white;
+}
+
+.icon.active {
+  background-color: red;
+  color: white;
+}
+
+span {
+  margin-left: 10px;
+  background-color: #fff;
+  padding: 10px 20px;
+  border: 1px solid #ddd;
+  background-color: #f9f9f9;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
